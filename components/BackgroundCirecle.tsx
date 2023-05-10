@@ -13,7 +13,7 @@ const BackgroundCirecle = (props: Props) => {
         borderRadius: ["20%", "20%", "50%", "80%", "20%"],
       }}
       transition={{ duration: 2.5 }}
-      className="relative flex justify-center items-center mb-10"
+      className="relative flex justify-center items-center md:mb-50"
     >
       <div className="absolute border border-[#333333] rounded-full h-[100px] w-[100px] mt-52 animate-ping" />
       <div className="absolute border border-[#333333] rounded-full h-[200px] w-[200px] mt-52" />
