@@ -41,8 +41,8 @@ const Header = (props: Props) => {
           fgColor="gray"
           bgColor="transparent"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-          Get in touch
+        <p className="hidden md:inline-flex text-sm text-gray-400">
+          Get In Touch
         </p>
       </motion.div>
     </header>

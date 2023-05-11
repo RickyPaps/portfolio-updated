@@ -10,7 +10,7 @@ const About = (props: Props) => {
       whileInView={{ opacity: [0.1, 0.3, 0.5, 0.8, 1] }}
       transition={{ duration: 3 }}
       className="flex flex-col items-center relative h-screen text-center  
-                     max-w-7xl px-10 mx-auto"
+                     max-w-7xl px-10 mx-auto md:justify-evenly"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
