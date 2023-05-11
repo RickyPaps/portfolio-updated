@@ -12,27 +12,27 @@ const About = (props: Props) => {
       className="flex flex-col items-center relative h-screen text-center  
                      max-w-7xl px-10 mx-auto md:justify-evenly"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-[70px] uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
-      <div className="flex flex-col mt-36 md:mt-10 items-center text-cente md:text-left md:flex-row">
+      <div className="flex flex-col mt-28 md:mt-10 items-center text-cente md:text-left md:flex-row">
         <motion.img
           src="/temp.jpg"
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.2 }}
           viewport={{ once: true }}
-          className="mb-5 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover 
+          className="mb-3 md:mb-0 flex-shrink-0 w-52 h-52 rounded-full object-cover 
                     md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[400px] md:mt-0"
         />
 
-        <div className="space-y-10 px-0 md:px-10">
-          <h4 className="text-4xl font-semibold ">
+        <div className="space-y-4 px-0 md:px-10">
+          <h4 className="text-3xl font-semibold mb-0">
             Here is a{" "}
             <span className="underline decoration-[#F7AB0A]">little</span>{" "}
             background
           </h4>
-          <p className="text-base">
+          <p className="text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quis
             nemo neque eveniet ab eligendi atque dolores unde minus reiciendis
             quisquam ratione quae magnam expedita, optio, voluptas praesentium,

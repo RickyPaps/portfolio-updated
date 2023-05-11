@@ -19,12 +19,12 @@ const Header = (props: Props) => {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.linkedin.com/in/ricky-papini-427ba0146/"
+          url="#"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.linkedin.com/in/ricky-papini-427ba0146/"
+          url="#"
           fgColor="gray"
           bgColor="transparent"
         />
