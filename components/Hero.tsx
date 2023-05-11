@@ -14,7 +14,7 @@ const Hero = (props: Props) => {
       "<But loves to develop more />",
     ],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 4000,
   });
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
