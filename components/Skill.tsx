@@ -1,18 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-import useMobileDetect from "use-mobile-detect-hook";
+import { isMobile } from "react-device-detect";
 
 type Props = {
   directionLeft?: boolean;
 };
 
 const Skill = ({ directionLeft }: Props) => {
-  const detectMobile = useMobileDetect();
   return (
     <div className="group relative flex cursor-pointer overflow-x:hidden">
       <motion.img
         initial={
-          detectMobile.isMobile()
+          isMobile
             ? { x: directionLeft ? -50 : 50, opacity: 0 }
             : { x: directionLeft ? -200 : 200, opacity: 0 }
         }
