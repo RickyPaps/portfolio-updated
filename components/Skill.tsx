@@ -1,20 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
+import useMobileDetect from "use-mobile-detect-hook";
 
 type Props = {
   directionLeft?: boolean;
 };
 
 const Skill = ({ directionLeft }: Props) => {
+  const detectMobile = useMobileDetect();
   return (
-    <div className="group relative flex cursor-pointer">
+    <div className="group relative flex cursor-pointer overflow-x:hidden">
       <motion.img
-        initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
+        initial={
+          detectMobile.isMobile()
+            ? { x: directionLeft ? -50 : 50, opacity: 0 }
+            : { x: directionLeft ? -200 : 200, opacity: 0 }
+        }
         transition={{ duration: 1.2 }}
         whileInView={{ x: 0, opacity: 1 }}
         src="/temp.jpg"
         className="rounded-full border border-gray-500 object-cover w-24 h-24 xl:h-32 xl:w-32 
-                   filter group-hover:grayscale transition duration-300 ease-in-out"
+                   filter md:h-28 group-hover:grayscale transition duration-300 ease-in-out"
       />
       <div
         className="absolute opacity-0 group-hover:opacity-80 transition duration-200 

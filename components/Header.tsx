@@ -19,15 +19,15 @@ const Header = (props: Props) => {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.linkedin.com/in/ricky-papini-427ba0146/"
+          url="https://github.com/RickyPaps?tab=repositories"
           fgColor="gray"
           bgColor="transparent"
         />
-        <SocialIcon
+        {/* <SocialIcon
           url="https://www.linkedin.com/in/ricky-papini-427ba0146/"
           fgColor="gray"
           bgColor="transparent"
-        />
+        /> */}
       </motion.div>
       <motion.div
         initial={{ x: 500, opacity: 0, scale: 0.5 }}
