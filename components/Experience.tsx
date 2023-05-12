@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
 
 type Props = {};
 
 const Experience = (props: Props) => {
+  // useEffect(() => {
+  //   const element = document.querySelector("#skills-scroll");
+  //   console.log(element);
+
+  //   element?.addEventListener("wheel", (event: any) => {
+  //     event.preventDefault();
+
+  //     element?.scrollBy({
+  //       left: event.deltaY < 0 ? -30 : 30,
+  //     });
+  //   });
+  // }, []);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -13,10 +26,14 @@ const Experience = (props: Props) => {
       className="h-screen flex relative overflow-hidden flex-col md:flex-row max-w-full px-10
                  justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-[70px] uppercase tracking-[20px] text-gray-500 text-xl">
+      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-xl">
         Experience
       </h3>
-      <div className="w-full flex space-x-5 p-10 overflow-x-scroll snap-x snap-mandatory">
+      <div
+        className="w-full flex space-x-5 p-10 overflow-x-scroll 
+                      scrollbar-hide scroll-smooth snap-x snap-mandatory"
+        id="skills-scroll"
+      >
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />

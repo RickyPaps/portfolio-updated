@@ -1,15 +1,17 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 type Props = {};
 
 const ExperienceCard = (props: Props) => {
+
+
   return (
     <article
       className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 
                 w-[500px] md:w-[600px] xl-w-[900px] snap-center bg-[#292929] 
                 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden
-                h-full md:h-[600px] xl-h-[900px] mt-10 md:mt-36 py-10 overflow-y-scroll"
+                h-[500px] md:h-[600px] xl-h-[900px] mt-10 md:mt-40 py-10 overflow-y-scroll"
+
     >
       <motion.img
         initial={{ y: -100, opacity: 0 }}
