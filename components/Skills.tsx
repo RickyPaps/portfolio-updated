@@ -20,7 +20,7 @@ const Skills = (props: Props) => {
         Hover over a skill for currency profieciency
       </h3>
 
-      <div className="grid grid-cols-4 gap-5 md:mt-32 p-10">
+      <div className="grid grid-cols-3 gap-5 md:mt-32">
         <Skill directionLeft />
         <Skill directionLeft />
         <Skill directionLeft />

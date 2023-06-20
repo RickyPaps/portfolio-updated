@@ -30,10 +30,11 @@ const Experience = (props: Props) => {
         Experience
       </h3>
       <div
-        className="w-full flex space-x-5 p-10 overflow-x-scroll 
-                      scrollbar-hide scroll-smooth snap-x snap-mandatory"
-        id="skills-scroll"
+        className="w-full flex space-x-5 p-10 overflow-x-scroll scroll-smooth snap-x snap-mandatory"
       >
+
+      {/* Will change how the experience cards are rendered in the future when pulling from a database */}
+
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
